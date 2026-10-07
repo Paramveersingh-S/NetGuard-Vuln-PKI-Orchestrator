@@ -1,0 +1,16 @@
+site_name: Chandigarh-Offshore-SOC-Lab
+switch_trusted_uplink: GigabitEthernet1/0/48
+corp_workstation_subnet: 10.20.0.0 255.255.0.0
+ad_core_subnet: 10.10.1.0 255.255.255.0
+ot_rov_subnet: 10.50.10.0 255.255.255.0
+pam_jump_subnet: 10.99.0.0 255.255.255.0
+bomgar_external_relay_ip: 198.51.100.44
+vlans:
+- id: 10
+  name: CORP_WORKSTATIONS
+- id: 20
+  name: OFFSHORE_OT_ROV
+- id: 99
+  name: MGMT_PAM_BOMGAR
+- id: 999
+  name: BLACKHOLE_UNUSED

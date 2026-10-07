@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nmaprun scanner="nmap" version="7.94SVN" args="nmap -sV -Pn -oX nmap_scan_sample.xml 10.0.0.0/8">
+  <host>
+    <address addr="10.50.10.15" addrtype="ipv4"/>
+    <hostnames><hostname name="rov-telemetry-plc01.ot.internal" type="PTR"/></hostnames>
+    <ports>
+      <port protocol="tcp" portid="23"><state state="open"/><service name="telnet" product="Cisco IOS telnetd" version="15.2"/></port>
+      <port protocol="tcp" portid="445"><state state="open"/><service name="microsoft-ds" product="Windows Embedded SMB" version="2.1"/></port>
+    </ports>
+  </host>
+  <host>
+    <address addr="10.10.1.5" addrtype="ipv4"/>
+    <hostnames><hostname name="ad-dc01.corp.internal" type="PTR"/></hostnames>
+    <ports>
+      <port protocol="tcp" portid="445"><state state="open"/><service name="microsoft-ds" product="Windows Server AD" version="2022"/></port>
+      <port protocol="tcp" portid="3389"><state state="open"/><service name="ms-wbt-server" product="Microsoft Terminal Services"/></port>
+      <port protocol="tcp" portid="443"><state state="open"/><service name="https" product="ADFS Web Proxy"/></port>
+    </ports>
+  </host>
+  <host>
+    <address addr="172.16.4.12" addrtype="ipv4"/>
+    <hostnames><hostname name="bomgar-dmz-gw01.corp.internal" type="PTR"/></hostnames>
+    <ports>
+      <port protocol="tcp" portid="161"><state state="open"/><service name="snmp" product="Net-SNMP" version="5.7"/></port>
+      <port protocol="tcp" portid="21"><state state="open"/><service name="ftp" product="vsftpd" version="3.0.2"/></port>
+    </ports>
+  </host>
+</nmaprun>
