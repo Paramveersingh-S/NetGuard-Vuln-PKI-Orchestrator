@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94SVN scan initiated Wed Nov 18 16:14:43 2026 as: nmap -sV -Pn -&#45;top-ports 20 -oX /mnt/d/Projects/scratch/cybersec_portfolio/NetGuard-Vuln-PKI-Orchestrator/reports/nmap_localhost_live.xml 127.0.0.1 -->
+<nmaprun scanner="nmap" args="nmap -sV -Pn -&#45;top-ports 20 -oX /mnt/d/Projects/scratch/cybersec_portfolio/NetGuard-Vuln-PKI-Orchestrator/reports/nmap_localhost_live.xml 127.0.0.1" start="1795018483" startstr="Wed Nov 18 16:14:43 2026" version="7.94SVN" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="20" services="21-23,25,53,80,110-111,135,139,143,443,445,993,995,1723,3306,3389,5900,8080"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1795018483" endtime="1795018483"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="127.0.0.1" addrtype="ipv4"/>
+<hostnames>
+<hostname name="localhost" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="21"><state state="closed" reason="reset" reason_ttl="64"/><service name="ftp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="22"><state state="closed" reason="reset" reason_ttl="64"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="23"><state state="closed" reason="reset" reason_ttl="64"/><service name="telnet" method="table" conf="3"/></port>
+<port protocol="tcp" portid="25"><state state="closed" reason="reset" reason_ttl="64"/><service name="smtp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="53"><state state="closed" reason="reset" reason_ttl="64"/><service name="domain" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="closed" reason="reset" reason_ttl="64"/><service name="http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="110"><state state="closed" reason="reset" reason_ttl="64"/><service name="pop3" method="table" conf="3"/></port>
+<port protocol="tcp" portid="111"><state state="closed" reason="reset" reason_ttl="64"/><service name="rpcbind" method="table" conf="3"/></port>
+<port protocol="tcp" portid="135"><state state="closed" reason="reset" reason_ttl="64"/><service name="msrpc" method="table" conf="3"/></port>
+<port protocol="tcp" portid="139"><state state="closed" reason="reset" reason_ttl="64"/><service name="netbios-ssn" method="table" conf="3"/></port>
+<port protocol="tcp" portid="143"><state state="closed" reason="reset" reason_ttl="64"/><service name="imap" method="table" conf="3"/></port>
+<port protocol="tcp" portid="443"><state state="closed" reason="reset" reason_ttl="64"/><service name="https" method="table" conf="3"/></port>
+<port protocol="tcp" portid="445"><state state="closed" reason="reset" reason_ttl="64"/><service name="microsoft-ds" method="table" conf="3"/></port>
+<port protocol="tcp" portid="993"><state state="closed" reason="reset" reason_ttl="64"/><service name="imaps" method="table" conf="3"/></port>
+<port protocol="tcp" portid="995"><state state="closed" reason="reset" reason_ttl="64"/><service name="pop3s" method="table" conf="3"/></port>
+<port protocol="tcp" portid="1723"><state state="closed" reason="reset" reason_ttl="64"/><service name="pptp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="3306"><state state="closed" reason="reset" reason_ttl="64"/><service name="mysql" method="table" conf="3"/></port>
+<port protocol="tcp" portid="3389"><state state="closed" reason="reset" reason_ttl="64"/><service name="ms-wbt-server" method="table" conf="3"/></port>
+<port protocol="tcp" portid="5900"><state state="closed" reason="reset" reason_ttl="64"/><service name="vnc" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8080"><state state="closed" reason="reset" reason_ttl="64"/><service name="http-proxy" method="table" conf="3"/></port>
+</ports>
+<times srtt="48" rttvar="93" to="100000"/>
+</host>
+<runstats><finished time="1795018483" timestr="Wed Nov 18 16:14:43 2026" summary="Nmap done at Wed Nov 18 16:14:43 2026; 1 IP address (1 host up) scanned in 0.62 seconds" elapsed="0.62" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

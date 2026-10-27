@@ -1,0 +1,70 @@
+{
+  "total_certificates": 4,
+  "compliant_count": 2,
+  "non_compliant_count": 2,
+  "results": [
+    {
+      "pem_file": "01_corp_root_ca.pem",
+      "common_name": "Oceaneering-Lab-RootCA",
+      "issuer_cn": "Oceaneering-Lab-RootCA",
+      "signature_hash": "SHA256",
+      "key_algorithm": "RSA",
+      "key_bits": 4096,
+      "days_remaining": 1802,
+      "is_self_signed": true,
+      "san_dns_names": [],
+      "status": "COMPLIANT",
+      "findings": []
+    },
+    {
+      "pem_file": "02_splunk_web_valid.pem",
+      "common_name": "splunk-soc.corp.internal",
+      "issuer_cn": "Oceaneering-Lab-RootCA",
+      "signature_hash": "SHA256",
+      "key_algorithm": "RSA",
+      "key_bits": 2048,
+      "days_remaining": 342,
+      "is_self_signed": false,
+      "san_dns_names": [
+        "splunk-soc.corp.internal"
+      ],
+      "status": "COMPLIANT",
+      "findings": []
+    },
+    {
+      "pem_file": "03_cyberark_pvwa_expiring.pem",
+      "common_name": "cyberark-pvwa.corp.internal",
+      "issuer_cn": "Oceaneering-Lab-RootCA",
+      "signature_hash": "SHA256",
+      "key_algorithm": "RSA",
+      "key_bits": 2048,
+      "days_remaining": 12,
+      "is_self_signed": false,
+      "san_dns_names": [
+        "cyberark-pvwa.corp.internal"
+      ],
+      "status": "NON_COMPLIANT",
+      "findings": [
+        "EXPIRING_SOON (12d left)"
+      ]
+    },
+    {
+      "pem_file": "04_legacy_rov_weak_1024.pem",
+      "common_name": "rov-legacy.ot.internal",
+      "issuer_cn": "rov-legacy.ot.internal",
+      "signature_hash": "SHA256",
+      "key_algorithm": "RSA",
+      "key_bits": 1024,
+      "days_remaining": -39,
+      "is_self_signed": true,
+      "san_dns_names": [],
+      "status": "NON_COMPLIANT",
+      "findings": [
+        "EXPIRED (39d overdue)",
+        "WEAK_RSA_KEY (1024-bit)",
+        "UNTRUSTED_SELF_SIGNED_LEAF",
+        "MISSING_SAN_EXTENSION"
+      ]
+    }
+  ]
+}
